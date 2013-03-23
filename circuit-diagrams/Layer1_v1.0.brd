@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9,18 +9,18 @@
 <grid distance="0.025" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -429,7 +429,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules>
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -663,7 +663,7 @@ design rules under a new name.</description>
 <element name="JP1" library="SparkFun-Connectors" package="1X12" value="M12PTH" x="6.985" y="6.35" smashed="yes" rot="MR90">
 <attribute name="NAME" x="3.7338" y="6.2738" size="1.27" layer="26" ratio="10" rot="MR90"/>
 </element>
-<element name="R13" library="SparkFun-Passives" package="0603-RES" value="" x="31.115" y="33.02" rot="MR270"/>
+<element name="R13" library="SparkFun-Passives" package="0603-RES" value="330" x="31.115" y="33.02" rot="MR270"/>
 <element name="LED13" library="adafruit" package="CHIPLED_0603" value="" x="32.385" y="37.465" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="31.115" y="40.005" size="1.27" layer="28" rot="MR180"/>
 </element>
@@ -975,30 +975,6 @@ design rules under a new name.</description>
 <wire x1="6.985" y1="8.89" x2="9.31" y2="8.89" width="0.254" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="3,16,76fd7815860288ea"/>
-<approved hash="3,16,cd91c2e2bcf1b382"/>
-<approved hash="3,16,554e60ce9cd8a958"/>
-<approved hash="3,16,942ea3efdff9e838"/>
-<approved hash="3,16,04d233974f8d78c8"/>
-<approved hash="3,16,b8dc60071c19c4c2"/>
-<approved hash="3,16,7bfaf1fd4f6ec569"/>
-<approved hash="3,16,99d7f7cd1f15710f"/>
-<approved hash="4,1,b3c0a26fb593b3bc"/>
-<approved hash="4,1,b020aa4fa213b37c"/>
-<approved hash="4,1,b332a59d92d3b3bc"/>
-<approved hash="4,16,b3c0a26fb593b3bc"/>
-<approved hash="4,16,b332a59d92d3b3bc"/>
-<approved hash="4,16,b020aa4fa213b37c"/>
-<approved hash="4,16,ca6c88aad1bedd80"/>
-<approved hash="4,16,601c6ab17e76e6de"/>
-<approved hash="4,16,e81002d4b4c77c82"/>
-<approved hash="4,16,a327ebca0eb43fdc"/>
-<approved hash="4,16,a310ab32c97a3f52"/>
-<approved hash="5,16,e5142901a21b32cc"/>
-<approved hash="4,16,1d2fa3838ac9a771"/>
-<approved hash="4,16,63827f658c3e35c8"/>
-</errors>
 </board>
 </drawing>
 </eagle>
